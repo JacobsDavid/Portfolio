@@ -1,0 +1,172 @@
+
+@font-face{font-family:slt;src:url(FONT/thornback-personal.ttf)}
+
+ul, body, menu { padding: 0; margin: 0;}
+a { text-decoration: none; color: black}
+p { margin: 0; width: auto; height: auto}
+
+body {
+    font-family: "Comic Sans MS";
+}
+
+ul {
+    list-style: square;
+}
+
+hr {
+    height: 0%;
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media only screen and (max-width: 1050px) {
+    .blocExplic {
+        flex-wrap: wrap!important;
+    }
+    .blocExplic div {
+        width: 100%!important;
+    }
+    .blocExplic img {
+        display: block;
+        margin: auto!important;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    #perso, #heure {
+        width: 100%!important;
+    }
+}
+
+body {
+    background-color: #2B2B2B;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+#listeMenu {
+    padding: 15px 0;
+}
+#listeMenu li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 3%;
+    letter-spacing: 2px;
+}
+menu {
+    text-align: center;
+    border-bottom: 3px dashed black;
+    background-image: linear-gradient(to top, #2B2B2B, white);
+}
+.largeTitre {
+    width: 100%;
+}
+h1 {
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+}
+.blocExplic img{
+    vertical-align: text-top;
+    margin: 0 3%;
+    border-radius: 25px;
+    box-shadow: 5px 10px 8px #2B2B2B;
+}
+
+.blocExplic div {
+    width: 70%;
+    padding: 20px;
+    min-width: 400px;
+    word-break: break-word;
+    word-wrap: break-spaces;
+}
+.blocExplic {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    color: white;
+    font-size: 16px;
+}
+
+.blocExplic li p {
+    text-indent: 10px;
+}
+
+
+.heure:nth-of-type(even){
+    transform: rotate(20deg)!important;
+}
+.heure {
+    text-align: center;
+    font-family: slt;
+    width: 23%;
+    transform: rotate(-20deg);
+    color: #000000;
+    font-size: 10vw;
+    text-shadow: 10px 10px 10px black;
+}
+
+#contenu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: auto;
+    height: calc(100vh - 56px);
+}
+#contenu h1 {
+    background-image: linear-gradient(to right, #2B2B2B, transparent);
+    color: white;
+    padding-left: 1%;
+}
+#contenu section{
+    width: 70%;
+    margin: 2%;
+    border-radius: 10px;
+}
+#contenu section:nth-of-type(even){
+    background-color: rgb(70, 70,70);
+
+}
+#contenu section:nth-of-type(odd){
+    background-color: dimgrey;
+}
+
+
+/* acceuil.html */
+#heure {
+    width: 50%;
+    min-width: 350px;
+    padding: 3%;
+}
+
+#heure caption {
+    color: white;
+    font-size: 20px;
+}
+#heure table td, th {
+    padding: 5px;
+}
+#heure table {
+    border-collapse: collapse;
+    font-size: 18px;
+    margin: auto;
+}
+#heure table tr {
+    border-bottom: 1px solid white;
+}
+#perso {
+    color: white;
+    width: 35%;
+    text-align: center;
+    padding: 3%;
+}
+#perso * {
+    display: block;
+    margin: auto;
+}
+#perso img {
+    border-radius: 250px;
+    padding: 3%;
+    width: 25vw;
+    height:  25vw;
+}
