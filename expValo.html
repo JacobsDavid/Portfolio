@@ -1,23 +1,28 @@
 <head>
     <script>
+
+        $("img").on("load", function () {
+            resizeImage($(this), 400);
+        }).each(function () {
+            if(this.complete){
+                $(this).load();
+            }
+        });
+
+
         function resizeImage(elem,largeur)
         {
-            console.dir(elem);
-            elem.each(function (i, elem) {
-                var prop = this.style.height/this.style.width;
-                var hauteur = largeur*prop;
-                elem.style.height = hauteur+'px';
-                elem.style.width = largeur+'px';
-            });
+            var prop = parseInt(elem.css("height"))/parseInt(elem.css("width"));
+            var hauteur = largeur*prop;
+            elem.css("height", hauteur);
+            elem.css("width", largeur);
         }
-
-        resizeImage($(".blocExplic img"), 500);
     </script>
 </head>
 <section>
     <h1 class="largeTitre">Hackaton</h1>
     <div class="blocExplic">
-        <img src="IMG/hackathon.jpg" id="edczefec">
+        <img src="IMG/hackathon.jpg">
         <div>
             <p>L’hackathon est certainement l’une des activités, parmi celles que j’ai pu faire durant cette année, la plus intéressante à quasiment tous les niveaux :</p><br>
             <ul>
@@ -90,6 +95,41 @@
 <section>
     <h1 class="largeTitre">Formation IA</h1>
     <div class="blocExplic">
+
+        <div>
+            Oui oui onfait ça !
+        </div>
+        <img src="IMG/bal.jpg">
+    </div>
+</section>
+<hr>
+<section>
+    <h1 class="largeTitre">Conférence</h1>
+    <div class="blocExplic compil">
+        <div>
+            Oui oui onfait ça !
+        </div>
+        <img src="IMG/bal.jpg">
+        <div>
+            Oui oui onfait ça !
+        </div>
+        <img src="IMG/bal.jpg">
+        <div>
+            Oui oui onfait ça !
+        </div>
+        <img src="IMG/bal.jpg">
+    </div>
+</section>
+<div class="heure">
+    10H
+</div>
+<hr>
+<div class="heure">
+    10H
+</div>
+<section>
+    <h1 class="largeTitre">Autres</h1>
+    <div class="blocExplic compil">
 
         <div>
             Oui oui onfait ça !

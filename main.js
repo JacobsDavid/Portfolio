@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
     const listeA = $("#listeMenu a");
-    
-    listeA.click(function (e) {
+
+    listeA.on("click", function (e) {
         e.preventDefault();
         $("#contenu").load(this.href);
         listeA.css("color", "black");
