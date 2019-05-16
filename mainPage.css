@@ -36,6 +36,9 @@ hr {
         width: 100%!important;
         font-size: 20px!important;
     }
+    .compil {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 750px){
@@ -111,9 +114,20 @@ h1 {
     font-size: 18px;
 }
 .compil {
+    width: 70%;
+    margin: auto;
     flex-wrap: wrap!important;
 }
-
+.compil div {
+    width: 100%;
+}
+.compil * {
+    display: block;
+    width: 100%;
+}
+.compil img {
+    margin: auto;
+}
 .blocExplic li p {
     text-indent: 10px;
 }
@@ -247,10 +261,16 @@ h1 {
     color: #AAAAAA;
     width: 50%;
 }
-#contenuPerso h1, h2 {
+#contenuPerso h1 {
     color: white;
     margin: 2% 0;
 }
+.blocExplic h1 {
+    color: white;
+    background-image: none!important;
+    background: transparent!important;
+}
+
 #contenuPerso img {
     width: 100px;
     height: 100px;
