@@ -1,4 +1,14 @@
 <head>
+    <script>
+            const listeA = $("#persoPage");
+
+            listeA.on("click", function (e) {
+                e.preventDefault();
+                $("#contenu").load(this.href);
+                listeA.css("color", "black");
+                $(this).css("color", "white");
+            });
+    </script>
     <style>
         #contenu {
             align-items: normal;
@@ -24,6 +34,7 @@
                 David Jacobs<br>
                 3eme Bachelier en technologie de l'informatique
             </p><br>
+            <a href="perso.html" id="persoPage">à propos de moi</a>
             <a href="doc/Curriculum-Vitae.pdf" target="_blank" data-type="document">Curriculum vitae</a>
         </div>
     </div>
@@ -89,8 +100,8 @@
             </tr>
             <tr>
                 <td>Création du site web</td>
-                <td>3h</td>
-                <td>3h</td>
+                <td>4h</td>
+                <td>4h</td>
             </tr>
             <tr>
                 <td>Formation Angular</td>
@@ -106,7 +117,7 @@
             <tfoot>
             <tr>
                 <td>Total des heures</td>
-                <td>66h</td>
+                <td>67h</td>
                 <td></td>
             </tr>
             </tfoot>
