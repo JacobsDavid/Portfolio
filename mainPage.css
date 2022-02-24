@@ -85,7 +85,7 @@ body {
 menu {
     text-align: center;
     border-bottom: 3px solid #3C3F41;
-    background-image: linear-gradient(to top, #2B2B2B, white);
+    background-color: #2B2B2B;
 }
 .largeTitre {
     width: 100%;
